@@ -13,7 +13,7 @@
    - handler 前后
    - 粒度：只支持到group
 - 静态文件和模板渲染
-   - 静态文件：`http.StripPrefix()`
+   - 静态文件：利用 `http.StripPrefix()` 过滤 `/static/` 前缀实现
    - 模板渲染：`html/template` 
    - 模板函数：`template.FuncMap`
 
