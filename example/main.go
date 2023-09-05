@@ -24,8 +24,8 @@ func main() {
 		},
 	})
 
-	r.LoadHTMLGlob("templates/*")
-	r.Static("/assets", "./static", []string{"/css/style.css"})
+	r.LoadHTMLGlob("example/templates/*")
+	r.Static("/assets", "example/static", []string{"/css/style.css"})
 
 	// 计时器中间件
 	r.Use(func(c *tinyweb.Context) {
